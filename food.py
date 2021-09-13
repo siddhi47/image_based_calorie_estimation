@@ -82,7 +82,7 @@ class FoodDataset(utils.Dataset):
         subset: Subset to load: train or val
         """
         # Add classes. We have only n+1 class to add.
-        for n,i in enumerate(english_lst):
+        for n,i in enumerate(english_list):
         	self.add_class("food", n+1,i )
 
         # Train or validation dataset?
